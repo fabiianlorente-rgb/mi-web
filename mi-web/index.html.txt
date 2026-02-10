@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLESS Barcelona Experience</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">BLESS</div>
+  <div class="menu">
+    <a href="#hotel">Hotel</a>
+    <a href="#barcelona">Barcelona</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#lifestyle">Lifestyle</a>
+    <a href="#practical">Plan</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Barcelona, donde el placer tiene dirección</h1>
+  <p>Una experiencia diseñada para quienes entienden el lujo como una forma de vivir.</p>
+  <button class="btn">Explora la experiencia</button>
+</section>
+
+<!-- HOTEL -->
+<section id="hotel" class="section">
+  <h2>The Hotel</h2>
+  <p>Más que un hotel. Un espacio donde cultura, diseño y sensaciones se encuentran en equilibrio perfecto.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Diseño Sensorial</h3>
+      <p>Arquitectura contemporánea con alma mediterránea.</p>
+    </div>
+    <div class="card">
+      <h3>Rooftop Ritual</h3>
+      <p>Un espacio donde la ciudad se celebra cada atardecer.</p>
+    </div>
+    <div class="card">
+      <h3>Wellness Experience</h3>
+      <p>El descanso entendido como arte.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BARCELONA -->
+<section id="barcelona" class="section">
+  <h2>Barcelona Curated</h2>
+  <p>Barcelona no se visita. Se vive. Descubre la ciudad desde la mirada Bless.</p>
+
+  <div class="grid">
+    <div class="card">Arquitectura</div>
+    <div class="card">Arte & Cultura</div>
+    <div class="card">Gastronomía</div>
+    <div class="card">Nightlife</div>
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section id="experiences" class="section">
+  <h2>Experiences</h2>
+  <p>Momentos diseñados para celebrar el placer de vivir.</p>
+
+  <div class="grid">
+    <div class="card">Chef Experiences</div>
+    <div class="card">Private City Tours</div>
+    <div class="card">Wellness Rituals</div>
+  </div>
+</section>
+
+<!-- LIFESTYLE -->
+<section id="lifestyle" class="section">
+  <h2>Lifestyle & Culture</h2>
+  <p>Historias, tendencias y cultura local curadas por Bless.</p>
+</section>
+
+<!-- PRACTICAL -->
+<section id="practical" class="section">
+  <h2>Plan Your Stay</h2>
+  <p>Ubicación, contacto y planificación de estancia en clave luxury.</p>
+  <button class="btn">Planifica tu estancia</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  BLESS Collection Experience — Luxury Lifestyle Hospitality
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
