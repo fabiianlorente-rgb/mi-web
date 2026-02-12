@@ -1,15 +1,13 @@
+// SCROLL REVEAL
 const photos = document.querySelectorAll(".photo");
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
+    if(entry.isIntersecting) entry.target.classList.add("show");
   });
-}, { threshold: 0.25 });
-
+},{threshold:0.25});
 photos.forEach(photo => observer.observe(photo));
 
+// LIGHTBOX
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 
@@ -19,7 +17,4 @@ photos.forEach(photo => {
     lightboxImg.src = photo.src;
   });
 });
-
-lightbox.addEventListener("click", () => {
-  lightbox.style.display = "none";
-});
+lightbox.addEventListener("click", ()=> lightbox.style.display = "none");
