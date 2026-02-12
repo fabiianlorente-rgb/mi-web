@@ -1,15 +1,25 @@
-// Smooth Scroll para los links del navbar
-document.querySelectorAll('nav a').forEach(link=>{
-  link.addEventListener('click', function(e){
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    target.scrollIntoView({behavior:'smooth'});
+const photos = document.querySelectorAll(".photo");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.25 });
+
+photos.forEach(photo => observer.observe(photo));
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+photos.forEach(photo => {
+  photo.addEventListener("click", () => {
+    lightbox.style.display = "flex";
+    lightboxImg.src = photo.src;
   });
 });
 
-// Hover animado simple para botones
-const buttons = document.querySelectorAll('.btn');
-buttons.forEach(btn=>{
-  btn.addEventListener('mouseenter',()=> btn.style.transform='scale(1.05)');
-  btn.addEventListener('mouseleave',()=> btn.style.transform='scale(1)');
+lightbox.addEventListener("click", () => {
+  lightbox.style.display = "none";
 });
